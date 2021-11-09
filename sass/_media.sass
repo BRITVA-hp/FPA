@@ -1,4 +1,67 @@
+@media screen and ( max-width: 1600px )
+    .main
+        background-size: 850px
+
+@media screen and ( max-width: 1500px )
+    .main
+        background-size: 750px
+
+@media screen and ( max-width: 1400px )
+    .main
+        background-size: 650px
+
+@media screen and ( max-width: 1300px )
+    .main
+        background-size: auto
+        background-image: url(../img/main/bgC.png)
+        padding-top: 80px
+        &__block
+            left: auto
+            right: 20px
+
+@media screen and ( max-width: 1200px )
+    .main
+        padding-bottom: 0
+        &__box
+            max-width: 470px
+        &__block
+            font-size: 24px
+            span
+                &:first-of-type
+                    font-size: 34px
+        &__text
+            max-width: 300px
+        &__title
+            font-size: 36px
+        &__subtitle
+            font-size: 27px
+            margin-bottom: 20px
+        &__text
+            font-size: 18px
+
+
 @media screen and ( max-width: 991px )
+    .main
+        padding-top: 34px
+        text-align: center
+        background-position-x: center
+        background-position-y: 230px
+        &__block
+            bottom: 175px
+            left: 50%
+            transform: translateX(-50%)
+            min-width: 468px
+            span
+                &:last-of-type
+                    color: #EE3F58
+        &__subtitle
+            margin-bottom: 445px
+        &__box
+            margin: auto
+            max-width: 490px 
+        &__text
+            max-width: none
+            margin-bottom: 20px
     .header
         padding-top: 18px
         padding-bottom: 18px
@@ -6,4 +69,35 @@
             display: none
         &__phone
             display: block
+
+@media screen and ( max-width: 575px )
+    .main
+        background-image: url(../img/main/bgM.png)
+        background-position-y: 180px
+        &__title
+            font-size: 25px
+        &__subtitle
+            font-size: 18px
+            margin-bottom: 350px
+        &__block
+            font-size: 18px
+            min-width: 305px
+            bottom: 168px
+            span
+                &:first-of-type
+                    font-size: 26px
+        &__text
+            font-size: 15px
+        &__button
+            padding: 20px 0
+            width: 100%
+            font-size: 18px
+        &__box
+            max-width: 335px
+
+@media screen and ( max-width: 360px )
+    .main
+        background-position-y: 220px
+        &__box
+            max-width: 280px
     
