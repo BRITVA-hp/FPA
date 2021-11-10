@@ -1,0 +1,102 @@
+.quiz
+    background-image: url(../img/quiz/bg.png)
+    background-repeat: no-repeat
+    background-position: center
+    padding-top: 70px
+    padding-bottom: 130px
+    margin-bottom: 80px
+    &__title
+        max-width: 1185px
+        margin-bottom: 70px
+    &__form
+        background: #FFFFFF
+        box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.25)
+        border-radius: 10px
+        padding: 110px 40px
+        max-width: 1296px
+        margin: auto
+        &__title
+            text-align: center
+            font-family: 'Helvetica-Neue', sans-serif
+            font-style: normal
+            font-size: 36px
+            line-height: 120%
+            color: #C22353
+            margin-bottom: 15px
+            max-width: 740px
+            margin-left: auto
+            margin-right: auto
+        &__subtitle
+            text-align: center
+            font-family: 'Helvetica-Neue', sans-serif
+            font-style: normal
+            font-size: 24px
+            line-height: 120%
+            color: #9CA8BA
+    &__label
+        display: block
+        font-style: normal
+        font-weight: normal
+        font-size: 24px
+        line-height: 120%
+        cursor: pointer
+        span
+            padding: 20px
+            background: #FFFFFF
+            border: 1px solid #9CA8BA
+            border-radius: 6px
+            display: block
+    &__radio
+        display: none
+        &:checked + span
+            background: #E4ECFD
+            border-radius: 6px
+            border: 1px solid #E4ECFD
+            color: #0065B1
+    &__input-group
+        width: 500px
+    &__box
+        margin-top: 60px
+        display: grid
+        grid-gap: 20px
+        justify-content: center
+        height: 160px
+        grid-template-rows: repeat(auto-fill, 70px)
+        grid-auto-flow: column
+        margin-bottom: 120px
+        &--last
+            margin-top: 60px
+            display: flex
+            flex-direction: column
+            align-items: center
+            margin-bottom: 10px
+    &__button-group
+        width: 500px
+        display: flex
+        justify-content: space-between
+        margin: auto
+    &__button
+        width: 100%
+        &:first-of-type
+            margin-right: 20px
+        &--last
+            margin-right: auto !important
+            width: 500px
+            margin: auto
+            display: block
+    &__input
+        font-style: normal
+        font-weight: normal
+        font-size: 20px
+        line-height: 120%
+        color: #9CA8BA
+        background: #FFFFFF
+        border: 1px solid #E2E2E2
+        border-radius: 6px
+        padding: 20px
+        width: 100%
+        margin-bottom: 20px
+        &:focus
+            outline: none
+        
+            

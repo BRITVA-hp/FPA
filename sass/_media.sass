@@ -1,6 +1,22 @@
 @media screen and ( max-width: 1600px )
+    .not
+        margin-bottom: 100px
+        &__row
+            flex-wrap: wrap
+            justify-content: center
+            max-width: 1032px
+            margin: auto
+        &__card
+            margin-bottom: 45px
+            &:first-of-type
+                margin-right: 20px
+
     .main
         background-size: 850px
+
+    .bonus
+        &__title
+            text-align: center
 
 @media screen and ( max-width: 1500px )
     .main
@@ -20,6 +36,36 @@
             right: 20px
 
 @media screen and ( max-width: 1200px )
+    .quiz
+        &__button
+            &--last
+                width: 400px
+        &__button-group
+            width: 400px
+        &__input-group
+            width: 400px
+        &__title
+            max-width: 920px
+        &__form
+            &__title
+                font-size: 30px
+                margin-bottom: 10px
+            &__subtitle
+                font-size: 21px
+        &__label
+            font-size: 20px
+        &__input
+            font-size: 20px
+        &__button
+            font-size: 18px
+
+    .section
+        &__title
+            font-size: 32px
+    
+    .bonus
+        margin-bottom: 100px
+
     .main
         padding-bottom: 0
         &__box
@@ -40,7 +86,45 @@
             font-size: 18px
 
 
+@media screen and ( max-width: 1071px )
+    .not
+        &__row
+            display: flex
+            flex-direction: column
+            align-items: center
+        &__card
+            margin-right: 0 !important
+
+
 @media screen and ( max-width: 991px )
+    .step
+        margin-bottom: 100px
+
+    .quiz
+        padding-top: 0
+        padding-bottom: 40px
+        &__input
+            margin-bottom: 0
+        &__form
+            padding: 60px 20px
+        &__input-group
+            margin-bottom: 20px
+            &:last-of-type
+                margin-bottom: 0
+        &__box
+            display: flex
+            flex-direction: column
+            grid-gap: 0
+            align-items: center
+            height: auto
+            margin-top: 30px
+            height: 330px
+            margin-bottom: 60px
+            justify-content: flex-start
+            &--last
+                margin-top: 30px
+                margin-bottom: 20px
+
     .main
         padding-top: 34px
         text-align: center
@@ -70,7 +154,105 @@
         &__phone
             display: block
 
+@media screen and ( max-width: 767px )
+    .quiz
+        &__input
+            font-size: 16px
+        &__button
+            &--last
+                width: 100%
+                max-width: 500px
+        &__button-group
+            width: 100%
+            max-width: 500px
+        &__box
+            height: 305px
+        &__input-group
+            width: 100%
+            max-width: 500px
+        &__form
+            &__title
+                font-size: 24px
+            &__subtitle
+                font-size: 18px
+        &__label
+            font-size: 16px
+
 @media screen and ( max-width: 575px )
+    .step
+        &__title
+            margin-bottom: 45px
+        &__card
+            width: 280px
+            padding: 0
+            height: 400px
+            margin-bottom: 20px
+            &:last-of-type
+                margin-bottom: 0
+            &__content
+                padding: 60px 25px 0 30px
+                background-size: contain
+        &__li
+            font-size: 16px
+            margin-bottom: 25px
+
+    .not
+        padding: 0
+        &__title
+            padding: 0 20px
+            margin-bottom: 45px
+
+    .card
+        width: 100%
+        margin-bottom: 20px
+        padding: 0 20px
+        height: 130px
+        font-size: 15px
+        &__img
+            width: 70px
+        &:last-of-type
+            margin-bottom: 0
+
+    .can
+        padding: 0
+        &__row
+            display: flex
+            flex-wrap: wrap
+            grid-gap: 0
+        &__title
+            margin-bottom: 45px
+            padding: 0 20px
+
+    .quiz
+        background-image: none
+        padding: 0
+        &__title
+            padding: 0 20px
+        &__button-group
+            flex-direction: column
+        &__button
+            margin-bottom: 20px
+            padding: 20px
+            &:last-of-type
+                margin-bottom: 0
+
+    .section
+        &__title
+            font-size: 25px
+
+    .bonus
+        &__title
+            font-size: 18px
+            text-align: left
+        &__row
+            justify-content: flex-start
+        &__card
+            font-size: 15px
+            width: 100%
+            padding: 0
+        &__container
+            max-width: 335px
+
     .main
         background-image: url(../img/main/bgM.png)
         background-position-y: 180px
