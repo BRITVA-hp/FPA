@@ -1,0 +1,105 @@
+.calc
+    margin-bottom: 200px
+    &__container
+        max-width: 1420px
+        margin: auto
+    &__row
+        background-image: url(../img/calc/bg.png)
+        background-repeat: no-repeat
+        background-position-x: right
+        background-position-y: center
+        background-size: contain
+    &__title
+        margin-bottom: 20px
+    &__subtitle
+        font-family: 'Helvetica-Neue', sans-serif
+        font-style: normal
+        font-size: 24px
+        line-height: 120%
+        text-align: center
+        margin-bottom: 84px
+    &__form
+        width: 728px
+        background-color: #FFFFFF
+        border: 1px solid #9CA8BA
+        border-radius: 10px
+        padding: 60px 110px
+    &__input-group
+        display: flex
+        flex-direction: column
+        width: 100%
+        margin-bottom: 30px
+    &__label
+        font-family: 'Helvetica-Neue', sans-serif
+        font-style: normal
+        font-size: 24px
+        line-height: 120%
+        margin-bottom: 10px
+        cursor: pointer
+        span
+            color: #9CA8BA
+            font-size: 20px
+    &__select
+        background-color: #FFFFFF
+        border: 1px solid #9CA8BA
+        border-radius: 6px
+        cursor: pointer
+        padding: 23px 25px
+        position: relative
+        transition: 0.3s
+        &::after
+            content: ''
+            position: absolute
+            width: 16px
+            height: 10px
+            background-image: url(../img/calc/arrow.png)
+            background-repeat: no-repeat
+            background-position: center
+            right: 25px
+            top: 50%
+            transform: translateY(-50%)
+            transition: 0.3s
+        &--active
+            border-radius: 6px 6px 0 0
+            .calc__select__content
+                border-top: none
+                z-index: 3
+            &::after
+                transform: translateY(-50%) rotate(180deg)
+        &__content
+            position: absolute
+            width: calc( 100% + 2px )
+            left: -1px
+            top: 100%
+            z-index: -1
+            background-color: #FFFFFF
+            border-radius: 0 0 6px 6px
+            max-height: 0px
+            overflow: hidden
+            border: 0px
+            transition: 0.3s
+            border: 1px solid #9CA8BA
+    &__option
+        padding: 23px 25px
+        transition: 0.3s
+        border-bottom: 1px solid #9CA8BA
+        &:first-of-type
+            border-top: 1px solid #9CA8BA
+        &:hover
+            background-color: #F6F6F6
+    &__input
+        font-style: normal
+        font-weight: normal
+        font-size: 20px
+        line-height: 120%
+        color: #9CA8BA
+        padding: 23px 25px
+        background-color: #FFFFFF
+        border: 1px solid #9CA8BA
+        border-radius: 6px
+        &:focus
+            outline: none
+    &__button
+        width: 100%
+        background-color: #EE3F58
+        border: 1px solid #EE3F58

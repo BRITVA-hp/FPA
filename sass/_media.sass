@@ -36,6 +36,22 @@
             right: 20px
 
 @media screen and ( max-width: 1200px )
+    .map
+        padding-bottom: 195px
+        &__text
+            font-size: 27px
+
+    .calc
+        margin-bottom: 100px
+        &__subtitle
+            margin-bottom: 45px
+            font-size: 20px
+        &__row
+            justify-content: center
+            background-image: none
+        &__label
+            text-align: center
+
     .quiz
         &__button
             &--last
@@ -97,6 +113,10 @@
 
 
 @media screen and ( max-width: 991px )
+    .calc
+        &__form
+            padding: 60px
+
     .step
         margin-bottom: 100px
 
@@ -155,6 +175,10 @@
             display: block
 
 @media screen and ( max-width: 767px )
+    .calc
+        &__form
+            padding: 60px 20px
+
     .quiz
         &__input
             font-size: 16px
@@ -179,6 +203,33 @@
             font-size: 16px
 
 @media screen and ( max-width: 575px )
+    .map
+        padding-bottom: 110px
+        &__text
+            font-size: 18px
+
+    .calc
+        padding: 0
+        &__title
+            margin-bottom: 10px
+        &__subtitle
+            font-size: 15px
+        &__title, &__subtitle
+            padding: 0 20px
+        &__select, &__option, &__input
+            padding: 20px
+            font-size: 16px
+        &__label
+            margin-bottom: 15px
+            span
+                font-size: 18px
+        &__input-group
+            margin-bottom: 25px
+        &__button
+            padding: 20px 0
+            font-size: 18px
+
+
     .step
         &__title
             margin-bottom: 45px

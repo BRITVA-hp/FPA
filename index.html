@@ -13,6 +13,9 @@
     <!--styles-->
     <link rel="stylesheet" href="css/style.css">
 
+    <!-- map -->
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=7cdd65bb-4916-4696-99f3-bcb15936f87c&lang=ru_RU" type="text/javascript"></script>
+
     <title>Document</title>
 </head>
 <body>
@@ -270,7 +273,110 @@
         </section>
         <!-- /.sectio step -->
 
+        <section class="section calc">
+
+            <div class="calc__container">
+                
+                <h3 class="section__title calc__title">В десятки раз дешевле списать долги, чем их выплачивать</h3>
+                <p class="calc__subtitle">Воспользуйтесь экспресс калькулятором и узнайте стоимость списания ваших долгов в 4 клика</p>
+
+                <div class="row calc__row">
+                    <form action="#" class="calc__form">
+
+                        <div class="calc__input-group">
+                            <p for="sum" class="calc__label">Сумма задолженности <br> <span>Актуально только с суммой долга более 300 000 руб</span></p>
+
+                            <div data-select class="calc__select">
+                                300 000 - 500 000 руб.
+                                <div class="calc__select__content">
+                                    <div data-option class="calc__option">300 000 - 500 000 руб.</div>
+                                    <div data-option class="calc__option">500 000 - 1 000 000 руб.</div>
+                                    <div data-option class="calc__option">Более 1 000 000 руб.</div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="calc__input-group">
+                            <p for="delays" class="calc__label">У Вас есть просрочки?</p>
+
+                            <div data-select class="calc__select">
+                                Да
+                                <div class="calc__select__content">
+                                    <div data-option class="calc__option">Да</div>
+                                    <div data-option class="calc__option">Нет</div>
+                                </div>  
+                            </div>
+
+                        </div>
+
+                        <div class="calc__input-group">
+                            <p for="property" class="calc__label">Есть ли у Вас имущество? <br> <span>С ипотекой не работаем!</span></p>
+
+                            <div data-select class="calc__select">
+                                Да
+                                <div class="calc__select__content">
+                                    <div data-option class="calc__option">Да</div>
+                                    <div data-option class="calc__option">Нет</div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="calc__input-group">
+                            <label class="calc__label" for="tel">Телефон</label>
+                            <input placeholder="+7 (___) ___ - __ - __" type="tel" id="tel" class="calc__input">
+                        </div>
+
+                        <button class="button calc__button">Рассчитать стоимость</button>
+                    </form>
+                </div>
+
+            </div>
+
+        </section>
+        <!-- /.section calc -->
+
+        <section class="section map">
+
+            <div class="container">
+
+                <h3 class="section__title map__title">Контакты</h3>
+                <p class="map__text">График работы: пн-пт 09:00–19:00;
+                    <br><br>
+                    Адрес: 610002, Кировская область, г. Киров, ул. Орловская, д. 51
+                    Телефон: 8(800)350-57-79
+                    ОГРН: 1174350004465</p>
+                
+                <div id="map" class="map__map"></div>
+            </div>
+
+        </section>
+        <!-- /.section map -->
+
     </main>
+
+    <div class="modal modal--active modal-main">
+
+        <div class="modal-main__dialog">
+
+            <h3 class="modal-main__title">Укажите Ваше имя и телефон для консультации с нашим юристом.</h3>
+
+            <div class="modal-main__input-group">
+                <input placeholder="Имя" type="text" class="modal-main__input">
+            </div>
+
+            <div class="modal-main__input-group">
+                <input placeholder="+7 (___) ___ - __ - __" type="text" class="modal-main__input">
+            </div>
+
+            <buton class="button modal-main__button">Оставить заявку</buton>
+
+        </div>
+
+    </div>
+    <!-- /.modal modal--active -->
     
+    <script src="js/script.js"></script>
 </body>
 </html>
