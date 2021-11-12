@@ -356,9 +356,11 @@
 
     </main>
 
-    <div class="modal modal--active modal-main">
+    <div class="modal modal-main">
 
         <div class="modal-main__dialog">
+
+            <img alt="close" src="img/modal/close.png" class="modal-main__close">
 
             <h3 class="modal-main__title">Укажите Ваше имя и телефон для консультации с нашим юристом.</h3>
 
@@ -366,11 +368,30 @@
                 <input placeholder="Имя" type="text" class="modal-main__input">
             </div>
 
-            <div class="modal-main__input-group">
+            <div class="modal-main__input-group modal-main__input-group--last">
                 <input placeholder="+7 (___) ___ - __ - __" type="text" class="modal-main__input">
             </div>
 
             <buton class="button modal-main__button">Оставить заявку</buton>
+
+        </div>
+
+    </div>
+    <!-- /.modal modal--active -->
+
+    <div class="modal modal-ok">
+
+        <div class="modal-ok__dialog">
+
+            <img src="img/modal/close.png" alt="close" class="modal-ok__close">
+
+            <img class="modal-ok__img" src="img/modal/ok.png" alt="ok">
+
+            <p class="modal-ok__title">Спасибо за ответы</p>
+
+            <p class="modal-ok__text">Ваши ответы приняты в обработку.
+                <br><br>
+                В ближайшие 10 минут с Вами свяжется юрист.</p>
 
         </div>
 
